@@ -1,0 +1,34 @@
+{
+    "project_name": "My Awesome Project",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "description": "Behold My Awesome Project!",
+    "author_name": "Aluf Devs Inc.",
+    "domain_name": "{{cookiecutter.project_slug}}.com",
+    "email": "{{ cookiecutter.project_slug }}@alufdevs.com",
+    "version": "0.1.0",
+    "open_source_license": [
+      "MIT",
+      "BSD",
+      "GPLv3",
+      "Apache Software License 2.0",
+      "Not open source"
+    ],
+    "timezone": "UTC",
+    "cloud_provider": [
+      "AWS",
+      "GCP",
+      "None"
+    ],
+    "use_async": "n",
+    "use_drf": "n",
+    "use_allauth": "n",
+    "use_celery": "n",
+    "ci_tool": [
+      "None",
+      "Travis",
+      "Gitlab",
+      "Github"
+    ],
+    "keep_local_envs_in_vcs": "y",
+    "debug": "n"
+  }
